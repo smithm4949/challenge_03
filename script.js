@@ -43,11 +43,11 @@ function generatePassword() {
   }
 
   if (confirm('Click OK to include capital letters in your password:')) {
-    characterOptions = characterOptions.concat(specialChars);
+    characterOptions = characterOptions.concat(capitals);
   }
 
   if (confirm('Click OK to include lowercase letters in your password:')) {
-    characterOptions = characterOptions.concat(specialChars);
+    characterOptions = characterOptions.concat(lowercase);
   }
 
   if (characterOptions.length == 0) {
