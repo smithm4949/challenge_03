@@ -27,7 +27,7 @@ function generatePassword() {
   let desiredLength = prompt('How long do you want your password to be?');
   if (isNaN(parseInt(desiredLength)) || desiredLength < 8 || desiredLength > 120) {
     console.log(desiredLength);
-    alert('You must enter a number between 8 and 120 for the length');
+    alert('You must enter a number between 8 and 120 for the length to generate a password');
     return;
   }
 
