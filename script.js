@@ -35,19 +35,19 @@ function generatePassword() {
   let password = '';
 
   if (confirm('Click OK to include special characters in your password:')) {
-    characterOptions.concat(specialChars);
+    characterOptions = characterOptions.concat(specialChars);
   }
 
   if (confirm('Click OK to include numbers in your password:')) {
-    characterOptions.concat(nums);
+    characterOptions = characterOptions.concat(nums);
   }
 
   if (confirm('Click OK to include capital letters in your password:')) {
-    characterOptions.concat(specialChars);
+    characterOptions = characterOptions.concat(specialChars);
   }
 
   if (confirm('Click OK to include lowercase letters in your password:')) {
-    characterOptions.concat(specialChars);
+    characterOptions = characterOptions.concat(specialChars);
   }
 
   if (characterOptions.length == 0) {
